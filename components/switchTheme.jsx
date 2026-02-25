@@ -81,7 +81,7 @@ export default function SwitchTheme() {
           <MaterialUISwitch 
             sx={{ m: 1 }}
             value={mode}
-            onChange={(event) => setMode(event.target.value)} 
+            onChange={(event) => setMode(event.target.value === 'dark' ? 'light' : 'dark')} 
          />
         }
         label="MUI switch"
