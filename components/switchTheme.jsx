@@ -82,6 +82,7 @@ export default function SwitchTheme() {
             sx={{ m: 1 }}
             value={mode}
             onChange={(event) => setMode(event.target.value === 'dark' ? 'light' : 'dark')} 
+            checked={mode === 'dark'}
          />
         }
         label="MUI switch"
